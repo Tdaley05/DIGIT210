@@ -1,0 +1,43 @@
+<svg height="350" width="500" xmlns="http://www.w3.org/2000/svg">
+    <desc>
+        Centered text within separate rectangles this time, I didnt animate the movements or anything for now, just more of fading in
+    </desc>
+    <defs>
+        <!-- shadow for text -->
+        <filter id="text-shadow" x="-50%" y="-50%" width="200%" height="200%">
+            <feDropShadow dx="2" dy="2" stdDeviation="2" flood-color="black"/> <!-- I'm getting an error here, google says it could be 1.1 vs 2, but when viewing online the SVG shows up as intended -->
+        </filter>
+        
+        <!-- blur -->
+        <filter id="ellipse-blur">
+            <feGaussianBlur stdDeviation="2"/>
+        </filter>
+    </defs>
+    <!-- background -->
+    <rect width="500" height="250" fill="black" stroke="Blue" stroke-width="10"/>
+    
+    <!-- largest ellipse -->
+    <g opacity="0">
+        <rect x="40" y="30" width="420" height="80" rx="20" ry="20" fill="black" fill-opacity=".7" stroke="orange" stroke-width="3" transform="rotate(-2 250 70)"/>
+        <ellipse cx="250" cy="70" rx="200" ry="40" fill="Aquamarine" fill-opacity=".5" filter="url(#ellipse-blur)" transform="rotate(-2 250 70)"/>
+        <text x="250" y="75" font-size="30" text-anchor="middle" fill="white" filter="url(#text-shadow)" transform="rotate(-2 250 70)">Tessa Daley</text>
+        <animate attributeName="opacity" from="0" to="1" dur="1s" begin="0s" fill="freeze"/> <!-- i googled and copy pasted this, then changed the values for the other few, I just thought id mess with it a bit -->
+    </g>
+    
+    <!-- medium -->
+    <g opacity="0">
+        <rect x="50" y="90" width="400" height="70" rx="20" ry="20" fill="black" fill-opacity=".7" stroke="orange" stroke-width="3" transform="rotate(2 250 125)"/>
+        <ellipse cx="250" cy="125" rx="160" ry="35" fill="Magenta" fill-opacity=".5" filter="url(#ellipse-blur)" transform="rotate(2 250 125)"/>
+        <text x="250" y="130" font-size="30" text-anchor="middle" fill="white" filter="url(#text-shadow)" transform="rotate(2 250 125)">DIGIT 210</text>
+        <animate attributeName="opacity" from="0" to="1" dur="1s" begin="1.2s" fill="freeze"/>
+    </g>
+    
+    <!-- smallest ellipse-->
+    <g opacity="0">
+        <rect x="70" y="160" width="360" height="60" rx="20" ry="20" fill="black" fill-opacity=".7" stroke="orange" stroke-width="3" transform="rotate(-1 250 190)"/>
+        <ellipse cx="250" cy="190" rx="120" ry="25" fill="DeepSkyBlue" fill-opacity=".5" filter="url(#ellipse-blur)" transform="rotate(-1 250 190)"/>
+        <text x="250" y="195" font-size="20" text-anchor="middle" fill="white" filter="url(#text-shadow)" transform="rotate(-1 250 190)">SPRING 2026</text>
+        <animate attributeName="opacity" from="0" to="1" dur="1s" begin="2.4s" fill="freeze"/>
+    </g>
+</svg>
+

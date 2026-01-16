@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <!-- will be edited for scaling soon -->
+    <head >
+        
+        <title>First SVG</title>
+    </head>
+    <body>
+       
+        
+        <svg height="180" width="500" xmlns="http://www.w3.org/2000/svg">
+            <rect width="400" height="150" x="50" y="0" rx="20" ry="20"
+                style="fill:black;stroke:Orange;stroke-width:5;opacity:1" />
+            <ellipse cx="250" cy="100" rx="190" ry="40" fill="aquamarine" fill-opacity=".5"/>
+            <ellipse cx="250" cy="70" rx="190" ry="40" fill="Magenta" fill-opacity=".5"/>
+            <ellipse cx="250" cy="45" rx="190" ry="40" fill="DeepSkyBlue" fill-opacity=".5"/>
+            
+            <text x="250" y="65" font-size="65" text-anchor="middle" fill="white">Tessa Daley</text>
+            <text x="250" y="105" font-size="25" text-anchor="middle" fill="white"> DIGIT 210 </text>
+            <text x="250" y="130" font-size="20" text-anchor="middle" fill="white"> SPRING 2026 </text>
+        </svg>
+        
+    </body>
+</html>
