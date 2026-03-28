@@ -1,0 +1,9 @@
+Used:
+pokemon-moves-gen5.txt
+
+
+Searches:                      Results:
+\tFire\t                     Found all Fire Types (11 items)
+^\S+\s+\S+\s+\S+\s+100       Power 100s
+\s100\s                      All 100 values
+Physical\s+([5-9]\d|1\d{2})   Physical and Power Value

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="700">
+   <text x="450"
+         y="50"
+         text-anchor="middle"
+         font-size="28"
+         font-weight="bold">
+                Magic Egg Count by Blob
+            </text>
+   <line x1="100"
+         y1="600"
+         x2="850"
+         y2="600"
+         stroke="black"
+         stroke-width="3"/>
+   <line x1="100"
+         y1="600"
+         x2="100"
+         y2="100"
+         stroke="black"
+         stroke-width="3"/>
+   <text x="40" y="350" transform="rotate(-90 40,350)" font-size="18">
+                Magic Egg Count
+            </text>
+   <text x="450" y="660" text-anchor="middle" font-size="18">
+                Blobs
+            </text>
+   <g transform="translate(0,600)">
+      <circle cx="300"
+              cy="-160"
+              r="32"
+              fill="rgb(240,0,150)"
+              stroke="black"
+              stroke-width="2"/>
+      <text x="300" y="30" text-anchor="middle" font-size="14">Blob the First</text>
+      <circle cx="500"
+              cy="-200"
+              r="40"
+              fill="rgb(300,0,150)"
+              stroke="black"
+              stroke-width="2"/>
+      <text x="500" y="30" text-anchor="middle" font-size="14">Blob the Second</text>
+      <circle cx="700"
+              cy="-160"
+              r="32"
+              fill="rgb(240,0,150)"
+              stroke="black"
+              stroke-width="2"/>
+      <text x="700" y="30" text-anchor="middle" font-size="14"> Blob the Third</text>
+   </g>
+</svg>
